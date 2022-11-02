@@ -1,0 +1,23 @@
+{
+  "name": "zoepix",
+  "version": "1.0.0",
+  "description": "*Cloning from Git and starting a new project* - Clone new repo from git, change folder name and make initial commit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch wp-content/themes/zoepix/src/css -o wp-content/themes/zoepix/dist --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoet24/zoepix.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zoet24/zoepix/issues"
+  },
+  "homepage": "https://github.com/zoet24/zoepix#readme",
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
