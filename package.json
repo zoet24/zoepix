@@ -1,7 +1,7 @@
 {
 	"scripts": {
-		"build": "npx tailwindcss -i ./wp-content/themes/zoepix/src/assets/css/style.scss -o ./wp-content/themes/zoepix/dist/style.css",
-		"dev": "npx tailwindcss -i ./wp-content/themes/zoepix/src/assets/css/style.scss -o ./wp-content/themes/zoepix/dist/style.css --watch"
+		"build": "npx tailwindcss -i ./wp-content/themes/swytch/src/assets/css/style.scss -o ./wp-content/themes/swytch/dist/style.css",
+		"dev": "npx tailwindcss -i ./wp-content/themes/swytch/src/assets/css/style.scss -o ./wp-content/themes/swytch/dist/style.css --watch"
 	},
 	"devDependencies": {
 		"postcss": "^8.3.5",

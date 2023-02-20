@@ -7,7 +7,6 @@
 /wp-activate.php
 /wp-blog-header.php
 /wp-comments-post.php
-/wp-config.php
 /wp-config-sample.php
 /wp-cron.php
 /wp-links-opml.php
@@ -25,7 +24,12 @@
 /wp-content/upgrade
 /wp-content/uploads
 
-# WP Installation - Theme
+# WP Installation - Themes
+/wp-content/themes/twentytwentyone
+/wp-content/themes/twentytwentytwo
+/wp-content/themes/twentytwentythree
+
+# WP Installation - Swytch
 /wp-content/themes/swytch/bin
 /wp-content/themes/swytch/dist
 /wp-content/themes/swytch/vendor
