@@ -1,25 +1,30 @@
 {
-	"name": "swytch/swytch",
-	"description": "Theme to display top 50 Swytch accessories",
-	"authors": [
-		{
-			"email": "zoethexton.dev@gmail.com",
-			"name": "zoethexton"
-		}
-	],
-	"repositories": [
-		{
-			"type": "composer",
-			"url": "https://wpackagist.org"
-		}
-	],
-	"require": {
-		"timber/timber": "1.*",
-		"vlucas/phpdotenv": "^4.1"
-	},
-	"config": {
-		"allow-plugins": {
-			"composer/installers": true
-		}
-	}
+    "name": "swytch/swytch",
+    "description": "Theme to display top 50 Swytch accessories",
+    "authors": [
+        {
+            "email": "zoethexton.dev@gmail.com",
+            "name": "zoethexton"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "johnpbloch/wordpress": "6.1.*",
+        "timber/timber": "1.*",
+        "vlucas/phpdotenv": "^4.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "johnpbloch/wordpress-core-installer": true
+        }
+    },
+    "extra": {
+      "wordpress-install-dir": "wp"
+    }
 }

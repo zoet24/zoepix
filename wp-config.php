@@ -48,14 +48,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'JtyO`h*&ZInTb1[W4|6kUJ-M[!zUk/lBZu?;%G<3X:+1K%c0/1`k{feCoito(}|J' );
-define( 'SECURE_AUTH_KEY',  '_M_`&~PS0q6pq/;<QBe@y*xJ&h[ygZ;hB]nk=$t&26?V2CX}U+/LQ@*A&hX#R./:' );
-define( 'LOGGED_IN_KEY',    '[S#OPA8+UhvLr(W]]rU:AVn}s(M0loz<WMG_CUKY0O^OU h]6 ]f<i;+L%Hv^dTF' );
-define( 'NONCE_KEY',        'Vm)0LJ7()KPBeO)@l]f7JwB8fQq7WuqKaX-8S-mt*KvF|oA$MrPwG1K_9#&MG#{m' );
-define( 'AUTH_SALT',        'ZGg(9pv$<y~@*~.M~*wj/)W4n{wir.1Ee]t=y---F)9>EJGJcD9r@)):ti^[j0$7' );
-define( 'SECURE_AUTH_SALT', '~XZK&+|CKZJ7k-3H?/gc6ee+S]V3v7 o8_+`PfD?:C6^@;e]5M,37Ppj<}6qt6Gx' );
-define( 'LOGGED_IN_SALT',   'rF.+=OyLqyU-uab;eY0z{l*F1GkpEji6l|ml ZDuEf)tc=;6qBCOAdNdH(%L4z/_' );
-define( 'NONCE_SALT',       '2ggnx?7Dk_xN8,Li(rd&(!:0vZU 7e`OeZ73kl_bKlC!8Sqo(C?(3KjM[;l03VT)' );
+define( 'AUTH_KEY',         '/@8-u]>?[Pk.4GV(uv!]V&tG)P>9=I^R([y!^~@68~2--Uev4)d?rV+2CX>CHPJo' );
+define( 'SECURE_AUTH_KEY',  '(W#iYK>6&r=9T!=PAn?5i]aFLdW~Xx3z+]enMWl{<2rO@.3/ftp[$8%Qe,9XlmxC' );
+define( 'LOGGED_IN_KEY',    '[.XdUUZmB]btcI/H2sCTX^^ZKhuBdv%)!3.h17o?5d.[Tje[c)ns=n,rv ZdUv5A' );
+define( 'NONCE_KEY',        'VQ@NTYQh;yg,HsW_n$jB;_n=|)k<NflV*x`u*.fm*Hrp+C-bB>jo}9;sP/c~&dv~' );
+define( 'AUTH_SALT',        'b^`k9 y!,F<0cM;&aljws Z9T(T/y1[1yewqsyd`o&:PW+AouD|*S*bBzq3Sj2W=' );
+define( 'SECURE_AUTH_SALT', ']yNmp-yc#l+gKW#^aDK$Xf)Q(@hjJ{*Y<SN 2e^<q]^H3QT3.I_O2{?UtqvHA#c6' );
+define( 'LOGGED_IN_SALT',   'B=.b6f#NaCN+efH4]qvjymfb/hdz;+>:|IZpGwX eeftJ#LK>,+F)[~Ael{mSs%A' );
+define( 'NONCE_SALT',       'CS_8GN]5,8 V(Z9DZ+EcfQN<R>Xr>Hv{{j<U!n=g+ntaP#[Ec 7/&QO2k#z9QNpI' );
 
 /**#@-*/
 
@@ -89,12 +89,16 @@ $dotenv->load();
 define('API_USER', getenv('API_USER'));
 define('API_KEY', getenv('API_KEY'));
 
+define('WP_SITEURL', getenv('WP_SITEURL'));
+
 
 /* That's all, stop editing! Happy publishing. */
+define('CONTENT_DIR', '/wp-content');
+define('WP_CONTENT_DIR', dirname(__FILE__) . CONTENT_DIR);
 
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
-	define( 'ABSPATH', __DIR__ . '/' );
+    define( 'ABSPATH', __DIR__ . '/wp' );
 }
 
 /** Sets up WordPress vars and included files. */

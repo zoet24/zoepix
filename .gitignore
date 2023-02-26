@@ -1,44 +1,16 @@
-# WP Installation
-/wp-admin
-/wp-includes
-/index.php
-/license.txt
-/readme.html
-/wp-activate.php
-/wp-blog-header.php
-/wp-comments-post.php
-/wp-config-sample.php
-/wp-cron.php
-/wp-links-opml.php
-/wp-load.php
-/wp-login.php
-/wp-mail.php
-/wp-settings.php
-/wp-signup.php
-/wp-trackback.php
-/xmlrpc.php
-
-# WP Installation - Content
-/wp-content/languages
-/wp-content/plugins
-/wp-content/upgrade
-/wp-content/uploads
-
-# WP Installation - Themes
-/wp-content/themes/twentytwentyone
-/wp-content/themes/twentytwentytwo
-/wp-content/themes/twentytwentythree
-
-# WP Installation - Swytch
-/wp-content/themes/swytch/bin
-/wp-content/themes/swytch/dist
-/wp-content/themes/swytch/vendor
-/wp-content/themes/swytch/composer.lock
-
-# General
-/vendor
-/node_modules
-.DS_Store
+# General - Root
+node_modules/
+vendor/
 .env
-.htaccess
+composer.lock
 package-lock.json
+wp-config.php
+
+# General - Themes
+dist/
+
+# WP Installation
+/wp
+
+# WP Content
+/wp-content/uploads

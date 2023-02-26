@@ -20,13 +20,20 @@ if ( file_exists( $composer_autoload ) ) {
 }
 
 // Load compiled Tailwind stylesheet
-wp_enqueue_style( 'swytch-styles', get_template_directory_uri() . '/dist/style.css' );
+wp_enqueue_style( 'swytch-styles', str_replace( '/wp', '', site_url() ) . '/wp-content/themes/swytch/dist/style.css' );
 
 // Load scripts
 function add_my_scripts() {
-    wp_enqueue_script( 'update-query-params', get_template_directory_uri() . '/src/assets/js/updateQueryParams.js', array(), '1.0', true );
+    wp_enqueue_script( 'update-query-params', str_replace( '/wp', '', site_url() ) . '/wp-content/themes/swytch/src/assets/js/updateQueryParams.js', array(), '1.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'add_my_scripts' );
+
+function add_my_script_tags() {
+    ?>
+    <script type="text/javascript" src="<?php echo str_replace( '/wp', '', site_url() ); ?>/wp-content/themes/swytch/src/assets/js/updateQueryParams.js"></script>
+    <?php
+}
+add_action( 'wp_head', 'add_my_script_tags' );
 
 /**
  * Font Awesome Kit Setup
@@ -193,5 +200,18 @@ class StarterSite extends Timber\Site {
 	}
 
 }
+
+// Add custom global variables here
+add_filter( 'timber/context', function( $context ) {
+    // Get the site URL without the "/wp" segment
+    $site_url = str_replace( '/wp', '', site_url() );
+    $site_url_theme = $site_url . '/wp-content/themes/swytch';
+    
+    // Add the siteURL variable to the context
+    $context['siteUrl'] = $site_url;
+    $context['siteUrlTheme'] = $site_url_theme;
+    
+    return $context;
+} );
 
 new StarterSite();
