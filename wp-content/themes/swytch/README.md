@@ -21,19 +21,3 @@ define('API_KEY', getenv('API_KEY'));
 5. Change your directory to the theme folder (you can do this by running `cd wp-content/themes/swytch`) and run `composer install` to generate another `composer.lock` file.
 6. Log in to your WordPress backend, navigate to Appearance > Themes and make sure the Swytch theme is activated.
 7. Navigate to Pages > Add New and change the page template to 'Popular accessories'. You don't need to add any additional content to the page, but the **_template must be set correctly_** as this is currently the only theme template that generates any content. Publish the page and you should be able to browse through a list of the top 50 most popular accessories generated from the Swytch dev API.
-
-## Future work
-
-In the future I would like to add the following features to this theme:
-
-- The accessories are currently ordered by the "sold" value. I would like to add a dropdown menu with different options for sorting the accessories (ie. ascending/descending name or price, biggest discount).
-- The Swytch dev API provides the "price" of each accessory in GBP, EUR and USD and the accessory cards currently only display the GBP value. I would like to add a currency toggle above the accessory cards grid that could be used to display the different currency values.
-- The accessories are currently presented as one long list. I would like to implement pagination to separate the accessories on to 3 or 4 separate pages.
-- The content of the hero block is currently hardcoded. I would like use ACF to add inputs for the heading, text content, displayed image on mobile and displayed image on desktop to give the WordPress user the ability to easily change the content.
-
-## Credits
-
-I used the starter Timber theme written by jarednova and featured on [Via Studio](https://via.studio/journal/building-a-wordpress-theme-with-timber) as a basis for this project.
-
-## Useful articles
-- [Setting up FontAwesome with Wordpress](https://fontawesome.com/v5/docs/web/use-with/wordpress/install-manually)

@@ -101,7 +101,7 @@ if ($sort == 'name_asc') {
 
 $accessories_fifty = array_slice($accessories, 0, 50);
 
-$context["accessories"] = $accessories_fifty;
+$context['accessories'] = $accessories_fifty;
 $context['currency'] = $currency;
 $context['sort'] = $sort;
 
