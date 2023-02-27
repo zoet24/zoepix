@@ -31,7 +31,7 @@ require_once ABSPATH . 'wp-settings.php';
 
 ## Update project specifics
 - In `webpack.config.js` update path names.
-- In project folder update project name and description in `composer.json` and run `composer.json`.
+- In project folder update project name and description in `composer.json` and run `composer install`.
 - In `functions.php` update the global variable names.
 - Update `README.md`.
 - Add relevant `screenshot.png`.
@@ -48,3 +48,4 @@ require_once ABSPATH . 'wp-settings.php';
 ## Useful articles
 - [Timber starter theme - Via Studio](https://via.studio/journal/building-a-wordpress-theme-with-timber)
 - [Setting up FontAwesome with Wordpress](https://fontawesome.com/v5/docs/web/use-with/wordpress/install-manually)
+- [Generating SSH keys on Github](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)

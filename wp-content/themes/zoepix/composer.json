@@ -1,0 +1,25 @@
+{
+	"name": "zoepix/zoepix",
+	"description": "Boilerplate theme for all Zoepix based WordPress projects",
+	"authors": [
+		{
+			"email": "zoethexton.dev@gmail.com",
+			"name": "zoethexton"
+		}
+	],
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://wpackagist.org"
+		}
+	],
+	"require": {
+		"timber/timber": "1.*",
+		"vlucas/phpdotenv": "^4.1"
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true
+		}
+	}
+}
